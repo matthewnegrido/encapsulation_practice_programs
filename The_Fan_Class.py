@@ -22,14 +22,25 @@ class Fan:
     def set_color(self, color):
         self.__color = color
 
-    def get_speed(self):
-        return self.__speed
+    def test_fan():
+        print("--- Testing Fan Class ---")
 
-    def is_on(self):
-        return self.__on
+        fan1 = Fan(speed=Fan.FAST, radius=10.0, color="yellow", on=True)
 
-    def get_radius(self):
-        return self.__radius
+        fan2 = Fan(speed=Fan.MEDIUM, radius=5.0, color="blue", on=False)
 
-    def get_color(self):
-        return self.__color
+        print("Fan 1 Properties:")
+        print(f"  Speed:  {fan1.get_speed()}")
+        print(f"  Radius: {fan1.get_radius()}")
+        print(f"  Color:  {fan1.get_color()}")
+        print(f"  On:     {fan1.is_on()}")
+        print()
+
+        print("Fan 2 Properties:")
+        print(f"  Speed:  {fan2.get_speed()}")
+        print(f"  Radius: {fan2.get_radius()}")
+        print(f"  Color:  {fan2.get_color()}")
+        print(f"  On:     {fan2.is_on()}")
+
+    if __name__ == "__main__":
+        test_fan()
