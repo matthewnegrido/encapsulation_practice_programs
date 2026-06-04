@@ -9,6 +9,19 @@ class Fan:
         self.__color = color
         self.__on = bool(on)
 
+    def set_speed(self, speed):
+        if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
+            self.__speed = speed
+
+    def set_on(self, on):
+        self.__on = bool(on)
+
+    def set_radius(self, radius):
+        self.__radius = float(radius)
+
+    def set_color(self, color):
+        self.__color = color
+
     def get_speed(self):
         return self.__speed
 
