@@ -17,10 +17,8 @@ class Car:
 def test_car():
     print("\n--- Testing Car Class ---")
 
-    # Creating a Car object
     my_car = Car("2026", "CyberTruck")
 
-    # Accelerating 5 times
     print("Accelerating:")
     for _ in range(5):
         my_car.accelerate()
@@ -28,7 +26,6 @@ def test_car():
 
     print()
 
-    # Braking 5 times
     print("Braking:")
     for _ in range(5):
         my_car.brake()
